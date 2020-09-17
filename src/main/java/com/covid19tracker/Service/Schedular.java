@@ -32,7 +32,7 @@ public class Schedular {
 	
 	private List<Countries> listCountries;
 	
-	@PostConstruct
+	
 	@Scheduled(cron="0 0 */1 * * *")  // Run in every 1hours
 	public void updateCountries() {
 //		Long b=(long) 0;
