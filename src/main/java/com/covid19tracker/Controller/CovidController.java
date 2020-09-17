@@ -44,7 +44,7 @@ public class CovidController {
 	@Autowired
 	private CountryRepository theCountryRepository;
 	
-	@GetMapping("/")
+	@GetMapping("/check")
 	public String test(){
 		return "Fine";
 	}
