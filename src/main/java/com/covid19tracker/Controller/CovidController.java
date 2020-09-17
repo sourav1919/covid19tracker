@@ -44,6 +44,11 @@ public class CovidController {
 	@Autowired
 	private CountryRepository theCountryRepository;
 	
+	@GetMapping("/")
+	public String test(){
+		return "Fine";
+	}
+	
 	@GetMapping("/todayrecords")
 		public List<Countries> getCountry(
 				@RequestParam(name = "parameter", defaultValue = "cases", required = false) String parameter,
